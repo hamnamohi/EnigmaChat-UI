@@ -25,13 +25,13 @@
                     
                     <label for="password">Password</label>
                     <div class="password-container">
-                        <input type="password" id="password" name="password" placeholder="Enter your password"required>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
                         <button type="button" class="toggle-password" onclick="togglePassword('password')">👁</button>
                     </div>
                     
                     <label for="confirm-password">Confirm Password</label>
                     <div class="password-container">
-                        <input type="password" id="confirm-password" name="confirm-password" placeholder="confirm your password" required>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
                         <button type="button" class="toggle-password" onclick="togglePassword('confirm-password')">👁</button>
                     </div>
                     
@@ -39,6 +39,11 @@
                     <div id="password-error" style="color: red; display: none; font-size: 14px; margin-top: 5px;"></div>
                     
                     <button type="submit" class="register-btn">Register</button>
+
+                    <!-- Login link -->
+                    <div class="login-link">
+                        <span>Already have an account? <a href="login.html">Login</a></span>
+                    </div>
                 </form>
             </div>
         </div>

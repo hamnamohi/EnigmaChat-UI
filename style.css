@@ -15,13 +15,12 @@ body {
     color: #ffffff;
 }
 
-/* Add to the existing CSS */
 .main-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative; /* Ensure the footer is contained within the container */
+    position: relative;
 }
 
 .square-container {
@@ -38,62 +37,36 @@ body {
 }
 
 .logo-container {
-    width: 40%; /* Adjust width for better layout */
-    text-align: center;
-}
-
-.form-container {
-    width: 60%; /* Adjust width for better layout */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-container {
     display: flex;
     flex-direction: column;
     align-items: flex-end; 
     justify-content: center;
-    padding-right: 20px;
+    padding-right: 10px;
     display: flex;
     justify-content: flex-end; 
     align-items: center;
     width: 50%; 
 }
 
-.logo-container img {
-    width: 130px;
-    height: auto;
-}
-
-.logo-container h1 {
-    font-size: 30px;
-    margin-top: 80px;
-    color: #ffffff;
-    font-family: 'Open Sans', sans-serif; /* Apply Open Sans */
-}
-
 .form-container {
-    width: 60%; 
-    height: 100;
+    width: 60%;
     display: flex;
     justify-content: center;
-    right: 40px;
+    align-items: center;
 }
 
 .register-form {
-    background-image: url('image 1.png'); 
-    background-size: contain; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-color: rgba(0, 0, 0, 0.8); /* Black overlay with 80% opacity */
+    background-image: url('image 1.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     border-radius: 8px;
     color: #ffffff;
-    width: 300%;
+    width: 100%;
     max-width: 600px;
-    padding: 20px; 
-    background-size: 100% 100%; 
+    background-size: 100% 100%;
 }
 
 .register-form h2 {
@@ -108,7 +81,6 @@ body {
     margin-top: 10px;
     display: block;
     text-align: left;
-    
 }
 
 .register-form input[type="text"],
@@ -121,7 +93,6 @@ body {
     border-radius: 5px;
     background-color: rgba(34, 34, 34, 0.8);
     color: #ffffff;
-
 }
 
 .password-container {
@@ -171,4 +142,18 @@ footer {
     font-weight: bold;
 }
 
+/* Style for the Login link section */
+.login-link {
+    margin-top: 20px;
+    color: #cccccc;
+    font-size: 14px;
+}
 
+.login-link a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
