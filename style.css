@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Align items vertically */
+}
+
+.square-container {
+    display: flex;
+    flex-direction: row; /* Arrange logo and form side by side */
+    align-items: center;
+    background-color:#000000; /* Black background with slight transparency */
+    padding: 20px;
+    border-radius: 10px;
+    width: 700px; /* Adjust width to fit both logo and form side by side */
+    height: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-bottom: 20px; /* Space below the square container */
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align logo and heading to the right */
+    justify-content: center;
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-end; /* Aligns content to the right */
+    align-items: center;
+    width: 50%; /* Take up half of the container width */
+}
+
+.logo-container img {
+    width: 130px;
+    height: auto;
+}
+
+.logo-container h1 {
+    font-size: 30px;
+    margin-top: 80px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif; /* Apply Open Sans */
+}
+
+.form-container {
+    width: 60%; /* Take up the other half of the container width */
+    display: flex;
+    justify-content: center;
+}
+
+.register-form {
+    background-image: url('image 1.png'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.8); /* Black overlay with 80% opacity */
+    padding: 20px;
+    border-radius: 8px;
+    color: #ffffff;
+    width: 300%;
+    max-width: 600px;
+}
+
+.register-form h2 {
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.register-form label {
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+    
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-color: rgba(34, 34, 34, 0.8);
+    color: #ffffff;
+
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.password-container input {
+    flex: 1;
+}
+
+.toggle-password {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: #036825;
+    outline: 3px solid #00FF38;
+}
+
+footer {
+    
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    font-size: 14px;
+    color: #999999;
+    background-color: #000000;
+    border-radius: 0 0 10px 10px;
+    margin-top: -50px;
+    position: relative;
+    font-weight: bold;
+   
+}
+
+
