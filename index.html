@@ -6,6 +6,24 @@
     <title>Enigma Chat Registration</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        // Function to validate passwords and redirect to login page
+        function validatePasswords() {
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirm-password").value;
+
+            if (password !== confirmPassword) {
+                const errorElement = document.getElementById("password-error");
+                errorElement.textContent = "Passwords do not match!";
+                errorElement.style.display = "block";
+                return false; // Prevent form submission
+            }
+
+            // Redirect to login page
+            window.location.href = "login.html";
+            return false; // Prevent default form submission to avoid page reload
+        }
+    </script>
 </head>
 <body>
     <div class="main-container">
