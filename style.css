@@ -15,37 +15,50 @@ body {
     color: #ffffff;
 }
 
+/* Add to the existing CSS */
 .main-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Align items vertically */
+    flex-direction: column;
+    position: relative; /* Ensure the footer is contained within the container */
 }
 
 .square-container {
     display: flex;
-    flex-direction: row; /* Arrange logo and form side by side */
+    flex-direction: row;
     align-items: center;
-    background-color:#000000; /* Black background with slight transparency */
+    background-color: #000000;
     padding: 20px;
     border-radius: 10px;
-    width: 700px; /* Adjust width to fit both logo and form side by side */
-    height: 500px;
+    width: 700px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     text-align: center;
-    margin-bottom: 20px; /* Space below the square container */
+    margin-bottom: 20px;
+}
+
+.logo-container {
+    width: 40%; /* Adjust width for better layout */
+    text-align: center;
+}
+
+.form-container {
+    width: 60%; /* Adjust width for better layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Align logo and heading to the right */
+    align-items: flex-end; 
     justify-content: center;
     padding-right: 20px;
     display: flex;
-    justify-content: flex-end; /* Aligns content to the right */
+    justify-content: flex-end; 
     align-items: center;
-    width: 50%; /* Take up half of the container width */
+    width: 50%; 
 }
 
 .logo-container img {
@@ -61,27 +74,31 @@ body {
 }
 
 .form-container {
-    width: 60%; /* Take up the other half of the container width */
+    width: 60%; 
+    height: 100;
     display: flex;
     justify-content: center;
+    right: 40px;
 }
 
 .register-form {
-    background-image: url('image 1.png'); /* Path to your background image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url('image 1.png'); 
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     background-color: rgba(0, 0, 0, 0.8); /* Black overlay with 80% opacity */
     padding: 20px;
     border-radius: 8px;
     color: #ffffff;
     width: 300%;
     max-width: 600px;
+    padding: 20px; 
+    background-size: 100% 100%; 
 }
 
 .register-form h2 {
     color: #ffffff;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -142,7 +159,6 @@ body {
 }
 
 footer {
-    
     width: 100%;
     max-width: 600px;
     text-align: left;
@@ -150,10 +166,9 @@ footer {
     color: #999999;
     background-color: #000000;
     border-radius: 0 0 10px 10px;
-    margin-top: -50px;
+    margin-top: -40px;
     position: relative;
     font-weight: bold;
-   
 }
 
 
