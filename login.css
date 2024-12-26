@@ -50,14 +50,15 @@ body {
 .logo-container img {
     width: 130px;
     height: auto;
+    margin-bottom: 80px; /* Adds space below the logo */
 }
 
-.logo-container h1 {
+.logo-container h2 {
     font-size: 30px;
-    margin-top: 80px;
     color: #ffffff;
     font-family: 'Open Sans', sans-serif; /* Apply Open Sans */
 }
+
 
 .form-container {
     width: 60%; 
@@ -174,7 +175,7 @@ footer {
     color: #999999;
     background-color: #000000;
     border-radius: 0 0 10px 10px;
-    margin-top: -50px;
+    margin-top: -40px;
     position: relative;
     font-weight: bold;
 }
