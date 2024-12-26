@@ -74,37 +74,35 @@ body {
     background-position: center; 
     background-repeat: no-repeat; 
     background-color: rgba(0, 0, 0, 0.8); /* Black overlay with 80% opacity */
-    padding: 20px;
+    padding: 40px; /* Increased padding for more internal space */
     border-radius: 8px;
     color: #ffffff;
-    width: 300%;
-    max-width: 600px;
-    padding: 20px; 
+    width: 400%; /* Increase width */
+    max-width: 600px; /* Allow larger form size */
     background-size: 100% 100%; 
-
-   
 }
+
 
 .Login-form h2 {
     color: #ffffff;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
     font-family: 'Open Sans', sans-serif;
 }
 .Login-form label {
     color: #ffffff;
     font-size: 14px;
-    margin-top: 10px;
+    margin-top: 20px;
     display: block;
     text-align: left;
     
 }
 .Login-form input[type="email"],
 .Login-form input[type="password"] {
-    width: 100%;
+    width: 300px;
     padding: 10px;
-    margin-top: 5px;
+    margin-top: 7px;
     border: 3px solid #333333;
-    border-radius: 5px;
+    border-radius: 9px;
     background-color: rgba(34, 34, 34, 0.8);
     color: #ffffff;
 }
@@ -147,6 +145,7 @@ body {
 
 .forgot-password {
     text-align: right;
+    font-size: 14px;
     margin-bottom: 10px;
     padding: 10px;
 }
